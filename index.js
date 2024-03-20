@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 
 mongoose
   .connect(
-    "mongodb+srv://azrimuhsin246:JX7bK4a0Pml3kOh7@practisedb.qqw6iuk.mongodb.net/?retryWrites=true&w=majority&appName=practiseDB"
+    process.env.MONGO
   )
   .then(() => {
     console.log("connected to the database!!!");
